@@ -1,0 +1,170 @@
+body {
+    font-family: 'Quicksand', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: rgb(245, 244, 241);
+    padding: 15px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 1000;
+}
+
+.logo img {
+    height: 100px;
+    width: 100px;
+}
+
+.nav-links {
+    display: flex;
+    gap: 100px;
+    margin: 0 auto;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #333;
+    font-size: 18px;
+    font-weight: 600;
+    transition: color 0.3s ease-in-out;
+}
+
+.nav-links a:hover {
+    color: #ff5722;
+    text-decoration: underline;
+}
+
+@media (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .nav-links {
+        flex-direction: column;
+        gap: 15px;
+        text-align: center;
+    }
+}
+.container-fluid {
+    width: 100%;
+    margin-top: 100px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+.container-fluid img {
+    width: 100%;
+    max-height: 500px;
+    object-fit: cover;
+    display: block;
+    border-radius: 10px;
+}
+
+.section-title {
+    text-align: center;
+    margin-bottom: 20px;
+    font-weight: 600;
+    font-size: 2rem;
+    color: #333;
+}
+
+.content-text {
+    font-size: 1rem;
+    color: #555;
+    max-width: 800px;
+    text-align: center;
+}
+/* Footer Styles */
+section#contact {
+    background-color: #f8f9fa;
+    padding: 3em 2em;
+    text-align: center;
+}
+
+.form-wrapper h4,
+.contact-wrapper h4 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    color: #333;
+}
+
+form {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 2rem;
+}
+
+form input[type="email"] {
+    flex: 1;
+    max-width: 300px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px 0 0 5px;
+    font-size: 1rem;
+}
+
+form input[type="submit"] {
+    padding: 10px 20px;
+    background-color: #ff5722;
+    color: white;
+    border: none;
+    border-radius: 0 5px 5px 0;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background-color 0.3s ease;
+}
+
+form input[type="submit"]:hover {
+    background-color: #e64a19;
+}
+
+.social-menu {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    list-style: none;
+    padding: 0;
+    margin: 0 0 1.5rem 0;
+}
+
+.social-menu li a {
+    color: #333;
+    font-size: 1.5rem;
+    transition: color 0.3s ease;
+}
+
+.social-menu li a:hover {
+    color: #ff5722;
+}
+
+.copy-wrapper {
+    margin-top: 2rem;
+    font-size: 0.9rem;
+    color: #666;
+}
+
+.copy-wrapper a {
+    color: #333;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.copy-wrapper a:hover {
+    text-decoration: underline;
+}
+
+.head{
+    text-align: center;
+    font-weight: bold;
+}
